@@ -56,12 +56,14 @@ class Accountant extends Employee {
 
 class ITDepartment extends Department {
     public Employee createEmployee(Long id) {
+        System.out.println("ITDepartment.createEmployee");
         return new Programmer(id);
     }
 }
 
 class AccountingDepartment extends Department {
     public Employee createEmployee(Long id) {
+        System.out.println("AccountingDepartment.createEmployee");
         return new Accountant(id);
     }
 }
